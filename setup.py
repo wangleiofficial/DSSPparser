@@ -1,15 +1,24 @@
 from setuptools import setup, find_packages
 
+this_directory = os_path.abspath(os_path.dirname(__file__))
+# 读取文件内容
+def read_file(filename):
+    with open(os_path.join(this_directory, filename), encoding='utf-8') as f:
+        long_description = f.read()
+    return long_description
+
 install_requires = ['pandas', 'requests']
 
 setup(
     name='DSSPparser',
     version='0.10',
-    url='https://github.com/neolei',
-    download_url='',
+    url='https://github.com/neolei/DSSPparser',
+    download_url='https://github.com/neolei/DSSPparser',
     author='neolei',
     author_email='wl20132017@webmail.edu.cn',
     description='parse protein secondary structure dssp file; DSSP api interface',
+    long_description=read_file('README.md'),
+    long_description_content_type="text/markdown",
     license='MIT',
     packages=find_packages(where="."),
     zip_safe=True,
