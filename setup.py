@@ -3,7 +3,7 @@ import os
 
 this_directory = os.path.abspath(os_path.dirname(__file__))
 def read_file(filename):
-    with open(os_path.join(this_directory, filename), encoding='utf-8') as f:
+    with open(os.path.join(this_directory, filename), encoding='utf-8') as f:
         long_description = f.read()
     return long_description
 
