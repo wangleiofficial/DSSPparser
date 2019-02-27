@@ -1,7 +1,6 @@
 from setuptools import setup, find_packages
 
 this_directory = os_path.abspath(os_path.dirname(__file__))
-# 读取文件内容
 def read_file(filename):
     with open(os_path.join(this_directory, filename), encoding='utf-8') as f:
         long_description = f.read()
