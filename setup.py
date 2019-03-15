@@ -4,7 +4,7 @@ install_requires = ['pandas', 'requests']
 
 setup(
     name='DSSPparser',
-    version='0.11',
+    version='0.12',
     url='https://github.com/neolei/DSSPparser',
     download_url='https://github.com/neolei/DSSPparser',
     author='neolei',
