@@ -10,7 +10,7 @@ setup(
     author='neolei',
     author_email='wl20132017@webmail.hzau.edu.cn',
     description='parse protein secondary structure dssp file; DSSP api interface',
-    long_description=open("README.md", "r").read(),
+    long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     license='MIT',
     packages=find_packages(where="."),
