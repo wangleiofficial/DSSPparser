@@ -11,12 +11,11 @@ DSSPparser is easy to parse dssp file, and can transform PDB format file to dssp
 parse dssp file to pandas.dataframe
 
 ```Python
-from DSSParser import parser
-parse_ = parseDSSP('2GW9.dssp')
+from DSSPparser import parser
+parse_ = parser.parseDSSP('2GW9.dssp')
 parse_.parse()
-pddict = parse_.dictTodataframe()
+df = parse_.dictTodataframe()
 ```
-
 Transform between the PDB format and dssp format
 
 ```Python
