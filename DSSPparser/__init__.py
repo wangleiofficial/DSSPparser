@@ -1,5 +1,4 @@
 from .parser import parseDSSP
-from .pdbToxssp import pdbToxssp
+from .pdbToxssp import pdbToxssp, inputCollection, outputCollection
 
-__all__ = ['parseDSSP', 'pdbToxssp']
-__version__ = '0.10'
+__all__ = ['parseDSSP', 'pdbToxssp', 'inputCollection', 'outputCollection']

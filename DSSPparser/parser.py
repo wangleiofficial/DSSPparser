@@ -14,6 +14,7 @@ class parseDSSP(object):
     Arguments:
         file {str} -- dssp file path
     '''
+
     def __init__(self, file):
         # sequential residue number
         self.resnum = []
@@ -47,7 +48,7 @@ class parseDSSP(object):
         input_handle = open(self._file, 'r')
         flag = False
         for line in input_handle:
-            if(re.search('#', line)):
+            if (re.search('#', line)):
                 flag = True
                 continue
             if flag:
@@ -93,10 +94,13 @@ class parseDSSP(object):
             pandas.dataframe -- dataframe foramt 
         '''
 
-        _dict = {'resnum': self.resnum, 'inscode': self.inscode, 'chain': self.chain, 'aa': self.aa, 'struct': self.struct, 'structdetails': self.structdetails, 
-                'bp1': self.bp1, 'bp2': self.bp2, 'acc': self.acc, 'h_nho1': self.h_nho1, 'h_ohn1': self.h_ohn1, 'h_nho2': self.h_nho2, 'h_ohn2': self.h_ohn2, 
-                'tco': self.tco, 'kappa': self.kappa, 'alpha': self.alpha, 'phi': self.phi, 'psi': self.psi, 'xca': self.xca, 'yca': self.yca, 'zca': self.zca, 
-                'rcsb_given_chain': self.rcsb_given_chain, 'author_given_chain': self.author_given_chain}
+        _dict = {'resnum': self.resnum, 'inscode': self.inscode, 'chain': self.chain, 'aa': self.aa,
+                 'struct': self.struct, 'structdetails': self.structdetails,
+                 'bp1': self.bp1, 'bp2': self.bp2, 'acc': self.acc, 'h_nho1': self.h_nho1, 'h_ohn1': self.h_ohn1,
+                 'h_nho2': self.h_nho2, 'h_ohn2': self.h_ohn2,
+                 'tco': self.tco, 'kappa': self.kappa, 'alpha': self.alpha, 'phi': self.phi, 'psi': self.psi,
+                 'xca': self.xca, 'yca': self.yca, 'zca': self.zca,
+                 'rcsb_given_chain': self.rcsb_given_chain, 'author_given_chain': self.author_given_chain}
         df = pd.DataFrame.from_dict(_dict)
         return df
 
@@ -334,11 +338,12 @@ class parseDSSP(object):
 
         return self.author_given_chain
 
+
 if __name__ == '__main__':
     import sys
+
     parse_ = parseDSSP(sys.argv[1])
     parse_.parse()
     # pddict = parse_.dictTodataframe()
     # print(pddict)
     print(parse_.getACC)
-    

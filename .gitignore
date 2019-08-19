@@ -1,3 +1,5 @@
 /dist
 /DSSPparser.egg-info
 /.vscode
+.idea
+*.iml

@@ -9,9 +9,9 @@ import time
 
 REST_URL = "http://www.cmbi.umcn.nl/xssp/"
 
-
-inputCollection = ["pdb_id","pdb_redo_id","pdb_file", "sequence"]
+inputCollection = ["pdb_id", "pdb_redo_id", "pdb_file", "sequence"]
 outputCollection = ["hssp_hssp", "hssp_stockholm", "dssp"]
+
 
 def pdbToxssp(_input, inputF="pdb_id", outputF="dssp"):
     '''transform PDB to xssp
@@ -105,8 +105,9 @@ def pdbToxssp(_input, inputF="pdb_id", outputF="dssp"):
         # Return the result to the caller, which prints it to the screen.
         return result
 
+
 if __name__ == '__main__':
     import sys
+
     result = pdbToxssp("2GW9")
     print(result)
-    
