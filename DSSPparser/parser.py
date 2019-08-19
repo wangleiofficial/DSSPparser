@@ -236,7 +236,7 @@ class parseDSSP(object):
 
     @property
     def getTCO(self):
-        '''cosine of angle between C=O of residue I and C=O of residue I-1. For alpha-helices,TCO is near +1, for β-sheets TCO is near -1. Not used for structure definition.
+        '''cosine of angle between C=O of residue I and C=O of residue I-1. For alpha-helices,TCO is near +1, for beita-sheets TCO is near -1. Not used for structure definition.
         
         Returns:
             list -- tco
