@@ -1,7 +1,7 @@
 DSSPparser
 ==========
 
-|PyPI - Version| |PyPI - Python Version| |GitHub - LICENSE|
+|PyPI - Version| |PyPI - Python Version| |GitHub - LICENSE| |Build Status| |codecov|
 
 DSSPparser is an easy tool to parse dssp file, and can transform PDB
 format file to dssp format file by
@@ -46,3 +46,7 @@ Released under the MIT license.
    :target: https://pypi.org/project/DSSPparser/
 .. |GitHub - LICENSE| image:: https://img.shields.io/github/license/neolei/DSSPparser.svg?style=flat
    :target: ./LICENSE.txt
+.. |Build Status| image:: https://travis-ci.org/neolei/DSSPparser.svg?branch=master
+    :target: https://travis-ci.org/neolei/DSSPparser
+.. |codecov| image:: https://codecov.io/gh/neolei/DSSPparser/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/neolei/DSSPparser
