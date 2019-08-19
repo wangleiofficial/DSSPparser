@@ -236,7 +236,7 @@ class parseDSSP(object):
 
     @property
     def getTCO(self):
-        '''cosine of angle between C=O of residue I and C=O of residue I-1. For α-helices,TCO is near +1, for β-sheets TCO is near -1. Not used for structure definition.
+        '''cosine of angle between C=O of residue I and C=O of residue I-1. For alpha-helices,TCO is near +1, for β-sheets TCO is near -1. Not used for structure definition.
         
         Returns:
             list -- tco
@@ -246,7 +246,7 @@ class parseDSSP(object):
 
     @property
     def getKAPPA(self):
-        '''virtual bond angle (bend angle) defined by the three Cα atoms of residues I-2,I,I+2.Used to define bend (structure code 'S').
+        '''virtual bond angle (bend angle) defined by the three C atoms of residues I-2,I,I+2.Used to define bend (structure code 'S').
         
         Returns:
             list -- [description]
@@ -256,7 +256,7 @@ class parseDSSP(object):
 
     @property
     def getALPHA(self):
-        '''virtual torsion angle (dihedral angle) defined by the four Cα atoms of residues I-1,I,I+1,I+2.Used to define chirality (structure code '+' or '-').
+        '''virtual torsion angle (dihedral angle) defined by the four C atoms of residues I-1,I,I+1,I+2.Used to define chirality (structure code '+' or '-').
         
         Returns:
             list -- alpha
@@ -286,8 +286,8 @@ class parseDSSP(object):
 
     @property
     def getX(self):
-        '''echo of Cα atom coordinates
-        
+        '''echo of C atom coordinates
+
         Returns:
             list -- xca
         '''
@@ -296,7 +296,7 @@ class parseDSSP(object):
 
     @property
     def getY(self):
-        '''echo of Cα atom coordinates
+        '''echo of C atom coordinates
         
         Returns:
             list -- yca
@@ -306,7 +306,7 @@ class parseDSSP(object):
 
     @property
     def getZ(self):
-        '''echo of Cα atom coordinates
+        '''echo of C atom coordinates
         
         Returns:
             list -- zca
@@ -341,9 +341,6 @@ class parseDSSP(object):
 
 if __name__ == '__main__':
     import sys
-
     parse_ = parseDSSP(sys.argv[1])
     parse_.parse()
-    # pddict = parse_.dictTodataframe()
-    # print(pddict)
     print(parse_.getACC)
