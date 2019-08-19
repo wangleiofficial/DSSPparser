@@ -1,11 +1,12 @@
 from unittest import TestCase
-import  unittest
+import unittest
 from DSSPparser import parseDSSP
+import os
 
 
 class TestParseDSSP(TestCase):
     def setUp(self):
-        self.parser = parseDSSP("./data/2GW9.dssp")
+        self.parser = parseDSSP(os.path.join(os.path.dirname(__file__), 'data', '2GW9.dssp'))
         self.parser.parse()
 
     def test_getResnums(self):

@@ -107,7 +107,5 @@ def pdbToxssp(_input, inputF="pdb_id", outputF="dssp"):
 
 
 if __name__ == '__main__':
-    import sys
-
     result = pdbToxssp("2GW9")
     print(result)
