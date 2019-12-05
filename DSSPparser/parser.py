@@ -48,7 +48,7 @@ class parseDSSP(object):
         input_handle = open(self._file, 'r')
         flag = False
         for line in input_handle:
-            if (re.search('#', line)):
+            if line.split()[0] == '#':
                 flag = True
                 continue
             if flag:
