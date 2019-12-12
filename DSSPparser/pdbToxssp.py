@@ -7,7 +7,7 @@ import json
 import requests
 import time
 
-REST_URL = "http://www.cmbi.umcn.nl/xssp/"
+REST_URL = "https://www3.cmbi.umcn.nl/xssp/"
 
 inputCollection = ["pdb_id", "pdb_redo_id", "pdb_file", "sequence"]
 outputCollection = ["hssp_hssp", "hssp_stockholm", "dssp"]
