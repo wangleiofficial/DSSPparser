@@ -10,9 +10,14 @@
 DSSPparser is an easy tool to parse dssp file, and can transform PDB format file to dssp format file by [xssp](http://www.cmbi.ru.nl/xssp/api/),also support the tansfrom between the PDB id and dssp format, hssp format and sequence.
 
 ## Install 
-
+stabel verison
 ```
 pip install DSSPparser
+```
+lastest version
+
+```
+pip install git+https://github.com/neolei/DSSPparser.git@master
 ```
 
 ## Examples
