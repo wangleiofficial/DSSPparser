@@ -25,7 +25,7 @@ pip install git+https://github.com/neolei/DSSPparser.git@master
 parse dssp file to pandas.dataframe
 
 ```
-from DSSParser import parseDSSP
+from DSSPparser import parseDSSP
 parser = parseDSSP('2GW9.dssp')
 parser.parse()
 pddict = parser.dictTodataframe()
