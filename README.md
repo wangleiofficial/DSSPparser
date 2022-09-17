@@ -17,7 +17,7 @@ pip install DSSPparser
 lastest version
 
 ```
-pip install git+https://github.com/neolei/DSSPparser.git@master
+pip install git+https://github.com/neolei/DSSPparser.git
 ```
 
 ## Examples
@@ -33,8 +33,13 @@ pddict = parser.dictTodataframe()
 
 Transform between the PDB format and dssp format
 
+ - Note: please install the DSSP software.
 ```
-from DSSPparser import pdbToxssp
+conda install -c salilab dssp
+```
+
+```
+from DSSPparser import pdbToxssp_local
 result = pdbToxssp("2GW9")
 ```
 

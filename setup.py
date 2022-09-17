@@ -1,18 +1,18 @@
 from setuptools import setup, find_packages
 
-install_requires = ['pandas', 'requests']
+install_requires = ['pandas', 'requests', 'biopython']
 
 setup(
     name='DSSPparser',
-    version='0.12',
-    url='https://github.com/neolei/DSSPparser',
-    download_url='https://github.com/neolei/DSSPparser',
-    author='neolei',
-    author_email='wl20132017@webmail.hzau.edu.cn',
-    maintainer='neolei',
+    version='0.1.3',
+    url='https://github.com/wangleiofficial/DSSPparser',
+    author='wanglei',
+    author_email='wanglei94@hust.edu.cn',
+    maintainer='wanglei',
     description='parse protein secondary structure; dssp file; DSSP api interface; transform PDB format to dssp format',
     keywords=['Bioinformation', 'DSSP'],
-    long_description=open("README.rst").read(),
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
     license='MIT',
     packages=find_packages(where=".", exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     zip_safe=True,
