@@ -40,7 +40,7 @@ conda install -c salilab dssp
 
 ```
 from DSSPparser import pdbToxssp_local
-result = pdbToxssp("2GW9")
+result = pdbToxssp_local("2GW9")
 ```
 
 ## License
